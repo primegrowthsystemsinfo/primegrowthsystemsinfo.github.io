@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://primegrowthsystemsinfo.github.io/sitemap.xml
+Sitemap: https://primegrowthsystems.com/sitemap.xml
