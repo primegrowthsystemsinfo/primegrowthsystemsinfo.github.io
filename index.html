@@ -40,6 +40,8 @@
       "logo": "https://primegrowthsystemsinfo.github.io/assets/logo-icon-512.png",
       "description": "Websites, custom apps, and AI automation for small businesses. Complete websites for a one-time $500 payment with free hosting and no monthly fees.",
       "priceRange": "$$",
+      "telephone": "+1-702-746-8150",
+      "email": "asapon@primegrowthsystems.com",
       "areaServed": "United States",
       "makesOffer": [
         {"@type": "Offer", "name": "Small business website package", "price": "500", "priceCurrency": "USD", "description": "One-time payment for a complete custom website. Includes free hosting with no monthly fees and a free domain name for the first year. Domain renewal after year one is the owner's responsibility."},
@@ -113,6 +115,16 @@ p{margin:0}
 .nav-links a{text-decoration:none;color:var(--text-secondary);font-weight:500;font-size:15.5px;transition:color .2s}
 .nav-links a:hover{color:var(--text-primary)}
 .nav .btn{min-height:44px;padding:10px 18px;font-size:15px}
+.nav-actions{display:flex;align-items:center;gap:10px}
+.nav-phone{display:inline-flex;align-items:center;gap:8px;min-height:44px;min-width:44px;justify-content:center;padding:0 6px;color:var(--text-primary);text-decoration:none;font-weight:600;font-size:15.5px;white-space:nowrap;border-radius:12px;transition:color .2s}
+.nav-phone:hover{color:var(--accent)}
+.nav-phone svg{width:18px;height:18px;color:var(--accent)}
+@media (max-width:1100px){.nav-phone span{display:none}.nav-phone{border:1px solid var(--line)}}
+.contact-line{margin-top:18px;color:var(--text-secondary)}
+.contact-line a{color:var(--text-primary);font-weight:600}
+.foot-contact{display:flex;flex-wrap:wrap;gap:4px 22px}
+.foot-contact a{color:var(--text-primary);font-weight:600;gap:8px}
+.foot-contact svg{width:16px;height:16px;color:var(--accent)}
 .menu-btn{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:transparent;color:var(--text-primary);cursor:pointer;align-items:center;justify-content:center}
 .menu-btn span,.menu-btn span::before,.menu-btn span::after{display:block;width:18px;height:2px;background:currentColor;border-radius:2px;position:relative;transition:transform .3s var(--ease),background-color .2s}
 .menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0}
@@ -299,6 +311,7 @@ input.invalid,textarea.invalid{border-color:#ff8a7a;box-shadow:0 0 0 4px rgba(25
   .steps{grid-template-columns:1fr}
 }
 @media (max-width:860px){
+  .nav-actions{gap:8px}
   .menu-btn{display:inline-flex}
   .nav .nav-cta{display:none}
   .nav-links{position:fixed;inset:68px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:var(--canvas);border-bottom:1px solid var(--line);padding:8px var(--gutter) 20px;transform:translateY(-8px);opacity:0;visibility:hidden;transition:all .3s var(--ease)}
@@ -307,6 +320,8 @@ input.invalid,textarea.invalid{border-color:#ff8a7a;box-shadow:0 0 0 4px rgba(25
   .nav-links li:last-child a{border:0;margin-top:14px;justify-content:center;color:var(--ink)}
 }
 @media (min-width:861px){.nav-links .only-m{display:none}}
+.price-grid>*{min-width:0}
+@media (max-width:370px){.separate li a{flex-wrap:wrap;gap:2px 12px}.separate li a span{white-space:normal}.brand{white-space:normal;max-width:150px;font-size:15px;line-height:1.05}.brand img{width:34px;height:34px;flex:none}}
 @media (max-width:600px){
   body{font-size:16.5px}
   .two{grid-template-columns:1fr}
@@ -316,6 +331,10 @@ input.invalid,textarea.invalid{border-color:#ff8a7a;box-shadow:0 0 0 4px rgba(25
   .mcta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(0,31,63,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line);gap:10px;transform:translateY(110%);transition:transform .35s var(--ease)}
   .mcta.show{transform:none}
   .mcta .btn{flex:1;min-height:48px;padding:12px 14px;font-size:15px}
+  .mcta .ico{flex:0 0 48px;width:48px;padding:0;background:var(--panel);color:var(--accent);box-shadow:inset 0 0 0 1px var(--line)}
+  .mcta .ico svg{width:20px;height:20px}
+  .brand{font-size:16px;gap:8px}
+  .brand img{width:36px;height:36px}
   .foot{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
 }
 @media (prefers-reduced-motion:reduce){
@@ -342,11 +361,17 @@ input.invalid,textarea.invalid{border-color:#ff8a7a;box-shadow:0 0 0 4px rgba(25
         <li><a href="#ai">AI automation</a></li>
         <li><a href="#voice">AI voice agents</a></li>
         <li><a href="#faq">FAQ</a></li>
+        <li class="only-m"><a href="tel:+17027468150">Call (702) 746-8150</a></li>
+        <li class="only-m"><a href="sms:+17027468150">Text us</a></li>
+        <li class="only-m"><a href="mailto:asapon@primegrowthsystems.com">Email us</a></li>
         <li class="only-m"><a class="btn btn-primary" href="#audit" data-type="audit">Request my free audit</a></li>
       </ul>
     </nav>
-    <a class="btn btn-primary nav-cta" href="#audit" data-type="audit">Free audit</a>
-    <button class="menu-btn" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Open menu"><span></span></button>
+    <div class="nav-actions">
+      <a class="nav-phone" href="tel:+17027468150" aria-label="Call (702) 746-8150"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>(702) 746-8150</span></a>
+      <a class="btn btn-primary nav-cta" href="#audit" data-type="audit">Free audit</a>
+      <button class="menu-btn" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Open menu"><span></span></button>
+    </div>
   </div>
 </header>
 
@@ -601,6 +626,7 @@ input.invalid,textarea.invalid{border-color:#ff8a7a;box-shadow:0 0 0 4px rgba(25
         <span class="kicker">Free, no obligation</span>
         <h2 id="form-title">Request my free audit.</h2>
         <p>Get a free report on where your current website falls short. If you want us to fix it, a full redesign is a set $350 with free hosting and no monthly fees. If not, the report is still yours, free. You can also ask about a demo, an app idea, or AI.</p>
+        <p class="contact-line">Prefer to talk? Call or text <a href="tel:+17027468150">(702) 746-8150</a>, or email <a href="mailto:asapon@primegrowthsystems.com">asapon@primegrowthsystems.com</a>.</p>
         <ul>
           <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="rgba(255,215,0,.16)"/><path d="m7 12.5 3.2 3.2L17 9" fill="none" stroke="#FFD700" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Free report, yours to keep either way</li>
           <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="rgba(255,215,0,.16)"/><path d="m7 12.5 3.2 3.2L17 9" fill="none" stroke="#FFD700" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>No pushy sales calls</li>
@@ -665,6 +691,11 @@ input.invalid,textarea.invalid{border-color:#ff8a7a;box-shadow:0 0 0 4px rgba(25
 <footer class="foot">
   <div class="wrap">
     <p>&copy; <span id="yr">2026</span> Prime Growth Systems</p>
+    <div class="foot-contact">
+      <a href="tel:+17027468150"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg>(702) 746-8150</a>
+      <a href="sms:+17027468150"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H9l-4.4 3.5A.4.4 0 0 1 4 20.2V5a1 1 0 0 1 1-1z" fill="currentColor"/></svg>Text us</a>
+      <a href="mailto:asapon@primegrowthsystems.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1.2 2 7.8 5.6L19.8 7z" fill="currentColor"/></svg>asapon@primegrowthsystems.com</a>
+    </div>
     <nav aria-label="Footer">
       <a href="#pricing">$500 websites</a>
       <a href="#apps">Custom apps</a>
@@ -677,6 +708,8 @@ input.invalid,textarea.invalid{border-color:#ff8a7a;box-shadow:0 0 0 4px rgba(25
 
 <div class="mcta" id="mcta" aria-hidden="true">
   <a class="btn btn-primary" href="#audit" data-type="audit" tabindex="-1">Request my free audit</a>
+  <a class="btn ico" href="tel:+17027468150" aria-label="Call (702) 746-8150" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg></a>
+  <a class="btn ico" href="sms:+17027468150" aria-label="Text (702) 746-8150" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H9l-4.4 3.5A.4.4 0 0 1 4 20.2V5a1 1 0 0 1 1-1z" fill="currentColor"/></svg></a>
 </div>
 
 <script>
@@ -752,7 +785,7 @@ input.invalid,textarea.invalid{border-color:#ff8a7a;box-shadow:0 0 0 4px rgba(25
   site.addEventListener('blur', () => { if (site.value.trim()) site.value = normUrl(site.value); });
 
   function fail(msgText) {
-    formErr.innerHTML = msgText + ' Please try again in a minute.';
+    formErr.innerHTML = msgText + ' Please try again, or call or text <a href="tel:+17027468150">(702) 746-8150</a>.';
     form.classList.add('err');
   }
   form.addEventListener('submit', async e => {
