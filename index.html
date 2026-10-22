@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Prime Growth Systems | $500 Websites, Custom Apps and AI for Small Business</title>
-<meta name="description" content="A complete small business website for one $500 payment. No monthly fees, free hosting, and a free domain for the first year. Plus custom apps and AI. Request a free audit or demo.">
+<meta name="description" content="A complete small business website for one $500 payment. No monthly fees, free hosting, and a free domain for the first year. Already have a site? Get a free audit and a $350 redesign.">
 <!-- DEPLOY STEP: canonical, og:url and sitemap use the live address. Update all three if the address changes. -->
 <link rel="canonical" href="https://primegrowthsystemsinfo.github.io/">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -43,7 +43,8 @@
       "areaServed": "United States",
       "makesOffer": [
         {"@type": "Offer", "name": "Small business website package", "price": "500", "priceCurrency": "USD", "description": "One-time payment for a complete custom website. Includes free hosting with no monthly fees and a free domain name for the first year. Domain renewal after year one is the owner's responsibility."},
-        {"@type": "Offer", "name": "Free website audit", "price": "0", "priceCurrency": "USD"},
+        {"@type": "Offer", "name": "Free website audit", "price": "0", "priceCurrency": "USD", "description": "A free report showing where an existing website falls short and how it can be improved. Free to keep with no obligation."},
+        {"@type": "Offer", "name": "Website redesign for existing websites", "price": "350", "priceCurrency": "USD", "description": "Set discounted one-time price to redesign a business's existing website, based on the free audit report."},
         {"@type": "Offer", "name": "Free homepage demo", "price": "0", "priceCurrency": "USD"},
         {"@type": "Offer", "name": "Custom app development", "description": "Quoted per project."},
         {"@type": "Offer", "name": "AI automation", "description": "Quoted per project."},
@@ -56,7 +57,8 @@
         {"@type": "Question", "name": "Are there any monthly fees?", "acceptedAnswer": {"@type": "Answer", "text": "No. You pay $500 once. Hosting is free with no monthly charges, and your domain name is free for the first year. After the first year you renew the domain yourself, directly with the domain company."}},
         {"@type": "Question", "name": "Is everything included in the $500 price?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, for your website. $500 is the final price, not a starting price, and it includes free hosting and a free first-year domain. Custom apps, AI automation, and AI voice agents are separate services with their own quotes, so you only pay for what you need."}},
         {"@type": "Question", "name": "What does the free website audit check?", "acceptedAnswer": {"@type": "Answer", "text": "How your site works on phones, how fast it loads, whether visitors can easily call or message you, and the search basics Google looks for. You get the results in plain language."}},
-        {"@type": "Question", "name": "Do I have to buy anything after the free audit or demo?", "acceptedAnswer": {"@type": "Answer", "text": "No. The audit and the demo are free with no obligation."}},
+        {"@type": "Question", "name": "I already have a website. What does a redesign cost?", "acceptedAnswer": {"@type": "Answer", "text": "A set price of $350, one time. Start with a free audit. The report shows where your current site is falling short and how a redesign would fix it. If you want us to do the work, it is $350."}},
+        {"@type": "Question", "name": "Do I have to buy anything after the free audit or demo?", "acceptedAnswer": {"@type": "Answer", "text": "No. The audit report is completely free and yours to keep, even if you never hire us. The demo is free too."}},
         {"@type": "Question", "name": "I am not technical. Is that a problem?", "acceptedAnswer": {"@type": "Answer", "text": "Not at all. We explain everything in plain language and handle the technical setup for you."}}
       ]
     }
@@ -183,6 +185,14 @@ section{position:relative}
 .separate li a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 16px;border-radius:14px;background:rgba(240,248,255,.06);text-decoration:none;font-weight:600;transition:background-color .25s}
 .separate li a:hover{background:rgba(240,248,255,.12)}
 .separate li a span{font-weight:500;color:var(--accent);font-size:14.5px;white-space:nowrap}
+.redesign{margin-top:24px;display:grid;grid-template-columns:auto 1fr auto;gap:clamp(20px,3.5vw,40px);align-items:center;background:#fff;border-radius:28px;padding:clamp(22px,3.5vw,36px);box-shadow:inset 0 0 0 2px var(--accent),0 30px 60px -40px rgba(0,31,63,.35)}
+.rd-price{display:flex;flex-direction:column;align-items:flex-start;line-height:1}
+.rd-price .was{font:600 20px/1 var(--body);color:var(--ink-2);text-decoration:line-through;text-decoration-thickness:2px}
+.rd-price b{display:flex;align-items:flex-start;font:700 clamp(64px,8vw,84px)/.9 var(--display);letter-spacing:-.04em;color:var(--ink);margin-top:4px}
+.rd-price b sup{font-size:.4em;margin-top:.15em}
+.rd-price small{font:600 15px/1.2 var(--body);color:var(--ink-2);margin-top:6px}
+.rd-copy h3{font-size:clamp(22px,2.4vw,28px)}
+.rd-copy p{margin-top:8px;color:var(--ink-2)}
 
 /* service blocks */
 .service{scroll-margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,72px);align-items:center;padding:clamp(40px,6vw,72px) 0;border-top:1px solid var(--line)}
@@ -281,6 +291,8 @@ input.invalid,textarea.invalid{border-color:#ff8a7a;box-shadow:0 0 0 4px rgba(25
 .js [data-reveal].in{opacity:1;transform:none}
 
 @media (max-width:960px){
+  .redesign{grid-template-columns:1fr}
+  .redesign .btn{width:100%}
   .hero-grid,.price-grid,.service,.demo,.form-sec .wrap{grid-template-columns:1fr}
   .service.flip .art{order:0}
   .art{aspect-ratio:16/10}
@@ -350,7 +362,7 @@ input.invalid,textarea.invalid{border-color:#ff8a7a;box-shadow:0 0 0 4px rgba(25
           <a class="btn btn-primary" href="#audit" data-type="audit">Request my free audit <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <a class="btn btn-ghost" href="#pricing">See the $500 website</a>
         </div>
-        <p class="note">Free and no obligation. No tech talk.</p>
+        <p class="note">Free report, yours to keep. Already have a website? Redesigns are a set $350.</p>
       </div>
 
       <div class="audit-card" id="audit-card" aria-labelledby="audit-card-title">
@@ -365,7 +377,7 @@ input.invalid,textarea.invalid{border-color:#ff8a7a;box-shadow:0 0 0 4px rgba(25
           <li style="--i:3"><svg viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="11" fill="rgba(255,215,0,.16)"/><path class="tick" d="m7 12.5 3.2 3.2L17 9" fill="none" stroke="#FFD700" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Search basics Google looks for</li>
           <li style="--i:4"><svg viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="11" fill="rgba(255,215,0,.16)"/><path class="tick" d="m7 12.5 3.2 3.2L17 9" fill="none" stroke="#FFD700" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Broken links and outdated parts</li>
         </ul>
-        <footer>You get a short, plain-language report you can act on, with or without us.</footer>
+        <footer>A plain-language report showing where your site falls short and how to fix it. Free to keep, even if you never hire us.</footer>
       </div>
     </div>
   </section>
@@ -373,7 +385,7 @@ input.invalid,textarea.invalid{border-color:#ff8a7a;box-shadow:0 0 0 4px rgba(25
   <div class="strip" aria-label="Highlights">
     <ul>
       <li>$500 websites, one payment</li>
-      <li>Free website audit</li>
+      <li>Free audit, $350 redesigns</li>
       <li>No monthly fees</li>
       <li>Free hosting</li>
       <li>Apps and AI quoted separately</li>
@@ -418,6 +430,14 @@ input.invalid,textarea.invalid{border-color:#ff8a7a;box-shadow:0 0 0 4px rgba(25
             <li><a href="#voice">AI voice agents <span>Quoted per project</span></a></li>
           </ul>
         </aside>
+      </div>
+      <div class="redesign" data-reveal>
+        <p class="rd-price" aria-label="350 dollars, discounted from 500"><span class="was">$500</span><b><sup>$</sup>350</b><small>for existing websites</small></p>
+        <div class="rd-copy">
+          <h3>Already have a website? Get it redesigned for $350.</h3>
+          <p>Start with a free audit. The report shows where your current site is falling short and how we would fix it. Want us to rebuild it? It is a set price of $350. Not ready? The report is still yours, completely free.</p>
+        </div>
+        <a class="btn btn-dark" href="#audit" data-type="audit">Request my free audit</a>
       </div>
     </div>
   </section>
@@ -566,7 +586,8 @@ input.invalid,textarea.invalid{border-color:#ff8a7a;box-shadow:0 0 0 4px rgba(25
         <details><summary>Are there any monthly fees?</summary><p>No. You pay $500 once. Hosting is free with no monthly charges, and your domain name is free for the first year. After the first year you renew the domain yourself, directly with the domain company.</p></details>
         <details><summary>Is everything included in the $500 price?</summary><p>Yes, for your website. $500 is the final price, not a starting price, and it includes free hosting and a free first-year domain. Custom apps, AI automation, and AI voice agents are separate services with their own quotes, so you only pay for what you need.</p></details>
         <details><summary>What does the free website audit check?</summary><p>How your site works on phones, how fast it loads, whether visitors can easily call or message you, and the search basics Google looks for. You get the results in plain language.</p></details>
-        <details><summary>Do I have to buy anything after the free audit or demo?</summary><p>No. The audit and the demo are free with no obligation.</p></details>
+        <details><summary>I already have a website. What does a redesign cost?</summary><p>A set price of $350, one time. Start with a free audit. The report shows where your current site is falling short and how a redesign would fix it. If you want us to do the work, it is $350.</p></details>
+        <details><summary>Do I have to buy anything after the free audit or demo?</summary><p>No. The audit report is completely free and yours to keep, even if you never hire us. The demo is free too.</p></details>
         <details><summary>I'm not technical. Is that a problem?</summary><p>Not at all. We explain everything in plain language and handle the technical setup for you.</p></details>
         <details><summary>I don't have a website yet. Can I still ask?</summary><p>Yes. Pick "Free demo" or "$500 website" in the form and leave the website box empty.</p></details>
       </div>
@@ -579,9 +600,9 @@ input.invalid,textarea.invalid{border-color:#ff8a7a;box-shadow:0 0 0 4px rgba(25
       <div class="side" data-reveal>
         <span class="kicker">Free, no obligation</span>
         <h2 id="form-title">Request my free audit.</h2>
-        <p>Or ask about a demo, an app idea, or AI. Everything comes to one inbox and a real person replies.</p>
+        <p>Get a free report on where your current website falls short. If you want us to fix it, a full redesign is a set $350. If not, the report is still yours, free. You can also ask about a demo, an app idea, or AI.</p>
         <ul>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="rgba(255,215,0,.16)"/><path d="m7 12.5 3.2 3.2L17 9" fill="none" stroke="#FFD700" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Plain-language results, no jargon</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="rgba(255,215,0,.16)"/><path d="m7 12.5 3.2 3.2L17 9" fill="none" stroke="#FFD700" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Free report, yours to keep either way</li>
           <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="rgba(255,215,0,.16)"/><path d="m7 12.5 3.2 3.2L17 9" fill="none" stroke="#FFD700" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>No pushy sales calls</li>
           <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="rgba(255,215,0,.16)"/><path d="m7 12.5 3.2 3.2L17 9" fill="none" stroke="#FFD700" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Your details are only used to reply to you</li>
         </ul>
